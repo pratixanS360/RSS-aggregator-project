@@ -22,3 +22,5 @@ go.work
 
 # Executable binaries
 RSS-aggregator-project
+
+.env
