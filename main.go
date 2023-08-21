@@ -37,6 +37,11 @@ func main() {
 		Addr: ":" + portString,
 	}
 
+	//Todo: Understand??
+	router.Get("", func(w srv.ResponseWriter, r *http.Request)) {
+		w.write([]byte("API Response"))
+	}
+
 	log.Printf("Server starting on PORT %v", portString)
 	err := srv.ListenAndServe()
 	if err != nil {
